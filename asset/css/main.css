@@ -26,6 +26,7 @@ body {
     margin-left: -150px;
     bottom: 0;
     z-index:10;
+    transform: scale(2);
     &>div{
         background: #ce2619;
         position: absolute;
@@ -313,4 +314,32 @@ body {
 
 .step-4 .icons .row span:nth-child(even),.step-3 .icons .row span:nth-child(even) {
     animation-duration: 0.7s;
+}
+
+
+@media only screen and (height: 1180px) , only screen and (height: 1366px) {
+    .giftbox {
+
+        top: 45%;
+        transform: scale(2);
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .giftbox {
+        transform: scale(0.8);
+    }
+}
+
+@media only screen and (width: 768px),only screen and (width: 820px) {
+    .giftbox {
+        transform: scale(1.5);
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .giftbox {
+        top: 40%;
+    }
 }
