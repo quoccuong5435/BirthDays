@@ -3,9 +3,10 @@ window.onload = function() {
     var merrywrap = document.getElementById("merrywrap");
     var cake = document.getElementById("cake");
     var box = merrywrap.getElementsByClassName("giftbox")[0];
+    var ano_novo = document.getElementById("ano_novo_2");
 
     var step = 1;
-    var stepMinutes = [2000, 2000, 1000, 1000];
+    var stepMinutes = [1000, 7000, 2000, 2000];
 
     // Initialize the function
     function init() {
@@ -20,24 +21,36 @@ window.onload = function() {
         merrywrap.className = 'merrywrap step-' + step;
         cake.className = 'container';
         cake.className = 'container step-' + step;
+        ano_novo.className = 'date-step-' + step;
     }
 
     // Open the box
     function openBox() {
         if (step === 1) {
             // Remove event listener when step is 1
-            box.removeEventListener("click", openBox, false);
+            box.removeEventListener("click", openBox, false);const container = document.getElementById("ano_novo_2");
+
+
         }
 
         // Call the stepClass function
         stepClass(step);
+        if (step === 2) {
+            const container = document.getElementById("ano_novo_2");
+            const htmlContent = "<div id=\"ano_novo\" class=\"ano_novo\"><span>2</span><span class=\"seis\">3</span><span class=\"sete\">4</span><div id=\"balao\" class=\"balao\"></div></div><div id=\"fogos\" class=\"fogos\"><div class=\"f1\"><span><i></i></span><span><i></i></span><span><i></i></span></div><div class=\"f2\"><span><i></i></span><span><i></i></span><span><i></i></span></div><div class=\"f3\"><span><i></i></span><span><i></i></span><span><i></i></span></div><div class=\"f4\"><span><i></i></span><span><i></i></span><span><i></i></span></div></div>";
+            container.innerHTML = htmlContent;
+        }
 
         if (step === 3) {
             // Do something when step is 3
+            const text = document.getElementById("text-birthday");
+            const htmlContent = "<div class=\"row\"><span>D</span><span>e</span><span>a</span><span>r</span><span> </span><span>A</span><span>n</span><span>h</span></div><div class=\"row\"><span class=\"letter\">H</span><span class=\"letter\">a</span><span class=\"letter\">p</span><span class=\"letter\">p</span><span class=\"letter\">y</span><span class=\"letter\">B</span><span class=\"letter\">i</span><span class=\"letter\">r</span><span class=\"letter\">t</span><span class=\"letter\">h</span><span class=\"letter\">d</span><span class=\"letter\">a</span><span class=\"letter\">y</span></div>\n";
+            text.innerHTML = htmlContent;
         }
 
         if (step === 4) {
             // Return when step is 4
+            // Get the element where you want to add the HTML
             return;
         }
 
@@ -61,112 +74,5 @@ function playAudio() {
     z.style.display = "none";
     y.style.display = "block";
     w.style.display = "none";
-    // b.classList.remove("before");
-    // console.log(b);
-    // b.classList.add("behavior");
-
-}
-//
-let W = window.innerWidth;
-let H = window.innerHeight;
-const canvas = document.getElementById("canvas");
-const context = canvas.getContext("2d");
-const maxConfettis = 100; // Max number paper confetti
-const particles = [];
-
-const possibleColors = [
-    "DodgerBlue",
-    "OliveDrab",
-    "Gold",
-    "Pink",
-    "SlateBlue",
-    "LightBlue",
-    "Gold",
-    "Violet",
-    "PaleGreen",
-    "SteelBlue",
-    "SandyBrown",
-    "Chocolate",
-    "Crimson"
-];
-
-function randomFromTo(from, to) {
-    return Math.floor(Math.random() * (to - from + 1) + from);
 }
 
-function confettiParticle() {
-    this.x = Math.random() * W; // x
-    this.y = Math.random() * H - H; // y
-    this.r = randomFromTo(20, 30); // radius
-    this.d = Math.random() * maxConfettis + 11;
-    this.color =
-        possibleColors[Math.floor(Math.random() * possibleColors.length)];
-    this.tilt = Math.floor(Math.random() * 33) - 11;
-    this.tiltAngleIncremental = Math.random() * 0.07 + 0.05;
-    this.tiltAngle = 0;
-
-    this.draw = function() {
-        context.beginPath();
-        context.lineWidth = this.r / 2;
-        context.strokeStyle = this.color;
-        context.moveTo(this.x + this.tilt + this.r / 3, this.y);
-        context.lineTo(this.x + this.tilt, this.y + this.tilt + this.r / 5);
-        return context.stroke();
-    };
-}
-
-function Draw() {
-    const results = [];
-
-    // Magical recursive functional love
-    requestAnimationFrame(Draw);
-
-    context.clearRect(0, 0, W, window.innerHeight);
-
-    for (var i = 0; i < maxConfettis; i++) {
-        results.push(particles[i].draw());
-    }
-
-    let particle = {};
-    let remainingFlakes = 0;
-    for (var i = 0; i < maxConfettis; i++) {
-        particle = particles[i];
-
-        particle.tiltAngle += particle.tiltAngleIncremental;
-        particle.y += (Math.cos(particle.d) + 3 + particle.r / 2) / 2;
-        particle.tilt = Math.sin(particle.tiltAngle - i / 3) * 15;
-
-        if (particle.y <= H) remainingFlakes++;
-
-        // If a confetti has fluttered out of view,
-        // bring it back to above the viewport and let if re-fall.
-        if (particle.x > W + 30 || particle.x < -30 || particle.y > H) {
-            particle.x = Math.random() * W;
-            particle.y = -30;
-            particle.tilt = Math.floor(Math.random() * 10) - 20;
-        }
-    }
-
-    return results;
-}
-
-window.addEventListener(
-    "resize",
-    function() {
-        W = window.innerWidth;
-        H = window.innerHeight;
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-    },
-    false
-);
-
-// Push new confetti objects to `particles[]`
-for (var i = 0; i < maxConfettis; i++) {
-    particles.push(new confettiParticle());
-}
-
-// Initialize
-canvas.width = W;
-canvas.height = H;
-Draw();
