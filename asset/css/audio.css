@@ -65,3 +65,64 @@
 #play-button-content h1 {
     color: #ce2619;
 }
+/*Apply screen width < 400 px */
+@media only screen and (max-width: 400px), only screen and (min-width: 300px) {
+    #play-button {
+        left: 80%;
+        height: 100px;
+        width: 100px;
+    }
+}
+/*IPhone 14 Pro Max  */
+@media only screen and (width: 430px) {
+    #play-button {
+        left: 78%;
+        height: 100px;
+        width: 100px;
+    }
+}
+/*Apply screen width > 400 px */
+@media only screen and (width: 414px) {
+    #play-button {
+        left: 78%;
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #play-button {
+        left: 62%;
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #play-button {
+        left: 60%;
+        height: 200px;
+        width: 200px;
+        font-size: 30px;
+    }
+}
+@media only screen and (min-width: 1080px) {
+    #play-button {
+        width:150px;
+        height:150px;
+        left:55%;
+    }
+}
+
+@media only screen and (max-height: 1000px) {
+    #play-button {
+        top: 55%;
+    }
+}
+
+@media only screen and (max-height: 1500px) {
+    #play-button {
+        top: 45%;
+    }
+}
