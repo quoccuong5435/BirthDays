@@ -324,7 +324,7 @@ body {
         top: 10%;
         .row:nth-child(1){
             & span {
-                font-size: 70px;
+                font-size: 60px;
             }
         }
         .row:nth-child(2){
@@ -340,7 +340,7 @@ body {
         top: 10%;
         .row:nth-child(1){
             & span {
-                font-size: 70px;
+                font-size: 60px;
             }
         }
         .row:nth-child(2){
@@ -407,7 +407,7 @@ body {
         top: 10%;
         .row:nth-child(1){
             & span {
-                font-size: 70px;
+                font-size: 60px;
             }
         }
         .row:nth-child(2){
@@ -423,12 +423,28 @@ body {
         top: 10%;
         .row:nth-child(1){
             & span {
-                font-size: 70px;
+                font-size: 60px;
             }
         }
         .row:nth-child(2){
             & span {
                 font-size: 45px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .icons{
+        top: 10%;
+        .row:nth-child(1){
+            & span {
+                font-size: 60px;
+            }
+        }
+        .row:nth-child(2){
+            & span {
+                font-size: 40px;
             }
         }
     }
