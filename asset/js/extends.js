@@ -5,7 +5,7 @@ let W = window.innerWidth;
 let H = window.innerHeight;
 const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
-const maxConfettis = 100; // Max number paper confetti
+const maxConfettis = 50; // Max number paper confetti
 const particles = [];
 
 const possibleColors = [
@@ -31,7 +31,7 @@ function randomFromTo(from, to) {
 function confettiParticle() {
     this.x = Math.random() * W; // x
     this.y = Math.random() * H - H; // y
-    this.r = randomFromTo(20, 30); // radius
+    this.r = randomFromTo(10, 20); // radius
     this.d = Math.random() * maxConfettis + 11;
     this.color =
         possibleColors[Math.floor(Math.random() * possibleColors.length)];

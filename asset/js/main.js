@@ -29,8 +29,6 @@ window.onload = function() {
         if (step === 1) {
             // Remove event listener when step is 1
             box.removeEventListener("click", openBox, false);const container = document.getElementById("ano_novo_2");
-
-
         }
 
         // Call the stepClass function

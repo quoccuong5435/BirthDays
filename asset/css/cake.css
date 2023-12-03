@@ -159,3 +159,30 @@ a{
 }
 
 
+@media only screen  and (max-height: 1366px) and (min-height: 1024px) {
+    .container{
+        transform: scale(1.5);
+        top: 40%;
+    }
+}
+
+@media only screen and (height: 1180px ){
+    .container{
+        transform: scale(2);
+        top: 40%;
+    }
+}
+
+@media only screen and (height: 1366px ){
+    .container{
+        transform: scale(2);
+        top: 40%;
+    }
+}
+
+@media only screen and (min-width: 1500px ){
+    .container{
+        transform: scale(1.5);
+        top: 35%;
+    }
+}
