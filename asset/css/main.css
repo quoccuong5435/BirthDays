@@ -434,7 +434,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 350px) and (min-width: 340px) {
     .icons{
         top: 10%;
         .row:nth-child(1){
@@ -445,6 +445,22 @@ body {
         .row:nth-child(2){
             & span {
                 font-size: 40px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .icons{
+        top: 10%;
+        .row:nth-child(1){
+            & span {
+                font-size: 60px;
+            }
+        }
+        .row:nth-child(2){
+            & span {
+                font-size: 35px;
             }
         }
     }
