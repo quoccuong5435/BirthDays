@@ -401,3 +401,19 @@ body {
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .icons{
+        top: 10%;
+        .row:nth-child(1){
+            & span {
+                font-size: 70px;
+            }
+        }
+        .row:nth-child(2){
+            & span {
+                font-size: 50px;
+            }
+        }
+    }
+}
