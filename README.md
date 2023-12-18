@@ -1,2 +1,5 @@
 # BirthDay
-Support Iphone 6+ and more versions newest. Ipad and web
+Time: 5 day 
+Cre: Codepen.io
+Custom Page + Add animation + Support Response.
+
