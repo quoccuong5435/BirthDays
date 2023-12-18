@@ -335,3 +335,11 @@ span.sete:before{
         left: -15%;
     }
 }
+
+@media only screen  and (height: 896px)  {
+
+    .ano_novo{
+        top: -28% !important;
+        transform: scale(1.2) !important;
+    }
+}

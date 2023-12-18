@@ -465,3 +465,20 @@ body {
         }
     }
 }
+
+
+@media only screen and (height: 896px) {
+    .icons{
+        top: 20% !important;
+        .row:nth-child(1){
+            & span {
+                font-size: 80px !important;
+            }
+        }
+        .row:nth-child(2){
+            & span {
+                font-size: 50px !important;
+            }
+        }
+    }
+}

@@ -192,3 +192,10 @@ a{
         top: 45%;
     }
 }
+
+@media only screen and (height: 896px ){
+    .container{
+        transform: scale(1.5);
+        top: 45%;
+    }
+}

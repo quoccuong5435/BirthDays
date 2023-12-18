@@ -84,7 +84,7 @@
 /*Apply screen width > 400 px */
 @media only screen and (width: 414px) {
     #play-button {
-        left: 78%;
+        left: 75% !important;
         height: 100px;
         width: 100px;
     }
