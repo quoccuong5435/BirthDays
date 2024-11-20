@@ -35,7 +35,7 @@ window.onload = function() {
         stepClass(step);
         if (step === 2) {
             const container = document.getElementById("ano_novo_2");
-            const htmlContent = "<div id=\"ano_novo\" class=\"ano_novo\"><span>1</span><span class=\"seis\">7</span><span class=\"sete\">7</span><div id=\"balao\" class=\"balao\"></div></div><div id=\"fogos\" class=\"fogos\"><div class=\"f1\"><span><i></i></span><span><i></i></span><span><i></i></span></div><div class=\"f2\"><span><i></i></span><span><i></i></span><span><i></i></span></div><div class=\"f3\"><span><i></i></span><span><i></i></span><span><i></i></span></div><div class=\"f4\"><span><i></i></span><span><i></i></span><span><i></i></span></div></div>";
+            const htmlContent = "<div id=\"ano_novo\" class=\"ano_novo\"><span>1</span><span class=\"seis\">7</span><span class=\"sete\">8</span><div id=\"balao\" class=\"balao\"></div></div><div id=\"fogos\" class=\"fogos\"><div class=\"f1\"><span><i></i></span><span><i></i></span><span><i></i></span></div><div class=\"f2\"><span><i></i></span><span><i></i></span><span><i></i></span></div><div class=\"f3\"><span><i></i></span><span><i></i></span><span><i></i></span></div><div class=\"f4\"><span><i></i></span><span><i></i></span><span><i></i></span></div></div>";
             container.innerHTML = htmlContent;
         }
 
