@@ -35,14 +35,14 @@ window.onload = function() {
         stepClass(step);
         if (step === 2) {
             const container = document.getElementById("ano_novo_2");
-            const htmlContent = "<div id=\"ano_novo\" class=\"ano_novo\"><span>1</span><span class=\"seis\">7</span><span class=\"sete\">8</span><div id=\"balao\" class=\"balao\"></div></div><div id=\"fogos\" class=\"fogos\"><div class=\"f1\"><span><i></i></span><span><i></i></span><span><i></i></span></div><div class=\"f2\"><span><i></i></span><span><i></i></span><span><i></i></span></div><div class=\"f3\"><span><i></i></span><span><i></i></span><span><i></i></span></div><div class=\"f4\"><span><i></i></span><span><i></i></span><span><i></i></span></div></div>";
+            const htmlContent = "<div id=\"ano_novo\" class=\"ano_novo\"><span>2</span><span class=\"seis\">0</span><span class=\"sete\">1</span><div id=\"balao\" class=\"balao\"></div></div><div id=\"fogos\" class=\"fogos\"><div class=\"f1\"><span><i></i></span><span><i></i></span><span><i></i></span></div><div class=\"f2\"><span><i></i></span><span><i></i></span><span><i></i></span></div><div class=\"f3\"><span><i></i></span><span><i></i></span><span><i></i></span></div><div class=\"f4\"><span><i></i></span><span><i></i></span><span><i></i></span></div></div>";
             container.innerHTML = htmlContent;
         }
 
         if (step === 3) {
             // Do something when step is 3
             const text = document.getElementById("text-birthday");
-            const htmlContent = "<div class=\"row\"><span>D</span><span>e</span><span>a</span><span>r</span><span> </span><span>S</span><span>u</span><span>s</span><span>u</span></div><div class=\"row\"><span class=\"letter\">H</span><span class=\"letter\">a</span><span class=\"letter\">p</span><span class=\"letter\">p</span><span class=\"letter\">y</span><span class=\"letter\">B</span><span class=\"letter\">i</span><span class=\"letter\">r</span><span class=\"letter\">t</span><span class=\"letter\">h</span><span class=\"letter\">d</span><span class=\"letter\">a</span><span class=\"letter\">y</span></div>\n";
+            const htmlContent = "<div class=\"row\"><span>D</span><span>e</span><span>a</span><span>r</span><span> </span><span>T</span><span>r</span><span>â</span><span>m</span></div><div class=\"row\"><span class=\"letter\">H</span><span class=\"letter\">a</span><span class=\"letter\">p</span><span class=\"letter\">p</span><span class=\"letter\">y</span><span class=\"letter\">B</span><span class=\"letter\">i</span><span class=\"letter\">r</span><span class=\"letter\">t</span><span class=\"letter\">h</span><span class=\"letter\">d</span><span class=\"letter\">a</span><span class=\"letter\">y</span></div>\n";
             text.innerHTML = htmlContent;
         }
 
