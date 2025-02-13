@@ -42,7 +42,7 @@ window.onload = function() {
         if (step === 3) {
             // Do something when step is 3
             const text = document.getElementById("text-birthday");
-            const htmlContent = "<div class=\"row\"><span>D</span><span>e</span><span>a</span><span>r</span><span> </span><span>T</span><span>r</span><span>â</span><span>m</span></div><div class=\"row\"><span class=\"letter\">H</span><span class=\"letter\">a</span><span class=\"letter\">p</span><span class=\"letter\">p</span><span class=\"letter\">y</span><span class=\"letter\">B</span><span class=\"letter\">i</span><span class=\"letter\">r</span><span class=\"letter\">t</span><span class=\"letter\">h</span><span class=\"letter\">d</span><span class=\"letter\">a</span><span class=\"letter\">y</span></div>\n";
+            const htmlContent = "<div class=\"row\"><span>D</span><span>e</span><span>a</span><span>r</span><span> </span><span>B</span><span>í</span></div><div class=\"row\"><span class=\"letter\">H</span><span class=\"letter\">a</span><span class=\"letter\">p</span><span class=\"letter\">p</span><span class=\"letter\">y</span><span class=\"letter\">B</span><span class=\"letter\">i</span><span class=\"letter\">r</span><span class=\"letter\">t</span><span class=\"letter\">h</span><span class=\"letter\">d</span><span class=\"letter\">a</span><span class=\"letter\">y</span></div>\n";
             text.innerHTML = htmlContent;
         }
 
